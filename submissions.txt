@@ -1,0 +1,29 @@
+# Submission ETL Pipeline - Fashion Studio Data
+
+## Tahapan ETL
+
+## Perintah untuk Menjalankan
+
+# Masuk ke direktori folder submisi-etl yang telah diekstrak
+
+# Buat Virtual Env terlebih dahulu
+python -m venv envir
+
+# Nyalakan virtual env 
+envir/scripts/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Menjalankan skrip ETL (extract, transform, load)
+python main.py
+
+# Menjalankan unit test pada folder test
+python -m pytest test
+
+# Menjalankan test coverage pada folder test
+coverage run -m pytest test
+coverage report
+
+# URL Google Sheets (data bersih)
+https://docs.google.com/spreadsheets/d/1qoxnlk10TPLrzIpwe21luqdwAfwMjcccpPAMGWy7XJE/edit?usp=sharing
